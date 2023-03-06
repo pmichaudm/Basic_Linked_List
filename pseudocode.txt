@@ -1,0 +1,25 @@
+declaring variables count at 0
+recursiveIndex at 0;
+and minValue at max integer value;
+
+minFinder: takes in an array of integers
+    set index to 0;
+    set min to the first element of the array;
+    for loop through the array:
+        if the element at index is less than min:
+            set min to the element at index;
+            set index to i;
+    after the loop, return index;
+
+minFinder_recursive: takes in an array of integers
+    if the array is null or has 1 or less elements:
+        print "Array needs at least 2 elements to find a minimum.";
+        return -1;
+    if count reaches the length of the array:
+        return recursiveMin;
+    if the element at count is less than minValue:
+        set minValue to the element at count;
+        set recursiveIndex to count;
+    set count to count + 1;
+    call minFinder_recursive(array);
+
